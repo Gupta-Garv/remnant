@@ -146,7 +146,8 @@ function App() {
     { name: 'Garima Bhardwaj', roll: '24120318', email: 'garima.bhardwaj24@iimb.ac.in' },
     { name: 'Reiveeka Wagh', roll: '24120695', email: 'reiveeka.wagh24@iimb.ac.in' },
     { name: 'Rishika Raja', roll: '24120709', email: 'rishika.raja24@iimb.ac.in' },
-    { name: 'Chaitanya', roll: '', email: '' }
+    { name: 'Chaitanya Saxena', roll: '24120243', email: 'chaitanya.saxena24@iimb.ac.in' },
+    { name: 'Prutha Deshpande', roll: '24120668', email: 'prutha.deshpande24@iimb.ac.in' }
   ]);
 
   // Live time ticker & coordinates wobble
