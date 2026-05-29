@@ -44,7 +44,7 @@ function App() {
       gsm: '450 GSM (Weatherproof)',
       tactile: 'Rough weave, rigid drape, pigment fade properties.',
       declassified: 'Procured from surplus vehicle canvas cover reserves. High tear-resistance, historically used for troop transport shelter halves.',
-      image: '/fabric_canvas.png'
+      image: 'fabric_canvas.png'
     },
     drill: {
       name: 'Deadstock Olive Drill',
@@ -54,7 +54,7 @@ function App() {
       gsm: '320 GSM (Reinforced)',
       tactile: 'Slightly brushed surface, structured drape, clean diagonal weave.',
       declassified: 'Overproduced fabric lot for military field dress contracts. Stored in climate-controlled storage for 6 years before salvage.',
-      image: '/fabric_drill.png'
+      image: 'fabric_drill.png'
     },
     ripstop: {
       name: 'Surplus Combat Ripstop',
@@ -64,7 +64,7 @@ function App() {
       gsm: '220 GSM (Ultra-Light)',
       tactile: 'High tensile strength, grid-like microtexture, water-resistant coating.',
       declassified: 'Originally specified for tactical field vests and lightweight parachute harnesses. Repurposed for drop pockets and inner linings.',
-      image: '/fabric_ripstop.png'
+      image: 'fabric_ripstop.png'
     }
   };
 
@@ -76,7 +76,7 @@ function App() {
       tagline: 'Built from decommissioned troop shelter canvas.',
       units: 40,
       materials: 'Surplus Indian Army OD Green Canvas',
-      image: '/product_jacket.png',
+      image: 'product_jacket.png',
       bgSize: 'cover',
       bgPosition: 'center',
       specs: [
@@ -91,7 +91,7 @@ function App() {
       tagline: 'Six-pocket tactical silhouette with tapered fit.',
       units: 60,
       materials: 'Surplus Combat Ripstop & Olive Drill',
-      image: '/product_trousers.png',
+      image: 'product_trousers.png',
       bgSize: 'cover',
       bgPosition: 'center',
       specs: [
@@ -106,7 +106,7 @@ function App() {
       tagline: 'Asymmetric tactical harness reconstruction.',
       units: 25,
       materials: 'Decommissioned Tactical Vest Panels',
-      image: '/product_vest.png',
+      image: 'product_vest.png',
       bgSize: 'cover',
       bgPosition: 'center',
       specs: [
