@@ -11,7 +11,6 @@ import {
   Lock, 
   FileText, 
   Maximize2, 
-  Download, 
   Check, 
   Calendar,
   X,
@@ -1163,23 +1162,23 @@ function App() {
                 {activeSlideTab === 'design' && (
                   <div>
                     <div className="dossier-stamp">SLIDE 1</div>
-                    <h3 className="font-heading" style={{ fontSize: '28px', marginBottom: '10px' }}>Design System & Aesthetic Logic</h3>
+                    <h3 className="font-heading" style={{ fontSize: '28px', marginBottom: '10px' }}>Design System and Brand Logic</h3>
                     <p style={{ color: 'var(--color-gray)', fontSize: '14px', marginBottom: '15px' }}>
-                      Critical analysis of visual decisions, brand tokens, and usability principles.
+                      Design strategy, visual language, and course framework alignment.
                     </p>
 
                     <div className="slide-bullet-list">
                       <div className="slide-bullet">
-                        <strong>Bold Military Color Palette (Anti-Dark Theme):</strong> Rather than using typical black/white portfolios, we used <em>Coyote Desert Tan (#DFD8CD)</em> as the structural background, paired with high-visibility <em>Hazard Orange (#FF5E00)</em> for interactive alerts and actions.
+                        <strong>Brief and Audience Definition:</strong> We defined our brief as a pitch website for REMNANT, a hypothetical sustainable Indian streetwear brand built from military deadstock. The audience is urban Indian youth aged 18 to 28 in metro cities, deliberately anti-fast-fashion, who value authenticity over trend cycles. Every design decision was made with this audience in mind: they are visually literate, skeptical of greenwashing, and respond to attitude over aspiration.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Typography Hierarchy:</strong> Used <em>Space Grotesk</em> for industrial, geometrical titles, and <em>Share Tech Mono</em> for coordinate registers and HUD status panels, giving a declassified tech pack feel.
+                        <strong>Color and Visual Language:</strong> We chose Coyote Desert Tan as the base background to evoke military utility and aged document aesthetics, avoiding the typical dark portfolio or clean white startup look. Hazard Orange was selected as the single accent color for all interactive and action elements. This creates an immediate visual hierarchy: the eye reads the cream first, then snaps to orange for every CTA, interactive widget, and alert. This is a direct application of the contrast and hierarchy principles from the course. One accent color used consistently across all eight sections ensures brand token consistency throughout the entire artifact.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Minimalism & Data Density:</strong> Copy is kept brief and formatted into functional manifests, tables, and blueprints, prioritizing technical diagrams and vectors over heavy text.
+                        <strong>Typography:</strong> Space Grotesk handles all structural headings and section titles, chosen for its geometric military-industrial character. Share Tech Mono handles all data registers, coordinates, and HUD status panels, creating a declassified tech-pack aesthetic that reinforces the brand narrative. This dual-font system was applied consistently across every section, which directly reflects the brand consistency principle taught in the course. No section deviates from these two fonts.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Accessibility:</strong> High contrast ratio between dark charcoal stencils and sandy khaki background. Large interactive click target regions and tooltips ensure clean accessibility.
+                        <strong>Accessibility and Layout:</strong> We applied a high contrast ratio between dark charcoal stencil text and the sandy background throughout. Large click target regions and tooltip states ensure the interactive elements are accessible. The single-scroll structure follows an F-pattern reading flow: the hero establishes the brand, the problem section grounds it in reality, the concept and product sections deepen engagement, and the CTA closes the loop. This mirrors the narrative arc principle of moving from awareness to action.
                       </div>
                     </div>
                   </div>
@@ -1188,41 +1187,120 @@ function App() {
                 {activeSlideTab === 'process' && (
                   <div>
                     <div className="dossier-stamp">SLIDE 2</div>
-                    <h3 className="font-heading" style={{ fontSize: '28px', marginBottom: '10px' }}>Development & Iterative Notes</h3>
+                    <h3 className="font-heading" style={{ fontSize: '28px', marginBottom: '10px' }}>Development Process and Iterations</h3>
                     <p style={{ color: 'var(--color-gray)', fontSize: '14px', marginBottom: '15px' }}>
-                      Step-by-step documentation of coding implementation and loops.
+                      Step-by-step reflection on design ideation, narrative flow, and iteration loops.
                     </p>
 
                     <div className="slide-bullet-list">
                       <div className="slide-bullet">
-                        <strong>Step 1 — Frame Construction:</strong> Built on a React + Vite boilerplate, utilizing raw CSS selectors and flexboxes to align elements strictly to a 1440px desktop grid.
+                        <strong>Step 1 — Establishing the Brief:</strong> We started by defining what kind of product REMNANT was and who it was for. Early ideation explored multiple brand directions before landing on the classified-document military archive aesthetic. The decision to frame every section as a mission protocol with GPS coordinates, progress trackers, and system logs was made to create a consistent brand world, not just a visual style. This reflects the brief alignment principle: every design choice needed to serve the brand story, not exist for its own sake.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Step 2 — Interactive Scanners:</strong> Coded the split-screen clip-path waste slider and fabric decrypter from scratch. They map mouse events inside the slider box container to handle the width dynamically.
+                        <strong>Step 2 — Content Architecture:</strong> We mapped the eight scroll sections as a deliberate narrative sequence: Hero establishes identity, Waste Problem creates urgency, The Concept resolves the tension, Drop 001 makes it real, Target Audience profiles the buyer, Why REMNANT argues the differentiators, Market Ledger grounds it in data, and Waitlist Terminal closes with action. This structure was directly informed by the pitch framework taught in the course: problem, solution, audience, differentiators, evidence, CTA.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Step 3 — CAD Product Blueprints:</strong> Garments are rendered as inline responsive SVGs. Hotspots are positioned at absolute coordinate overlays and hoverable for detail reveal.
+                        <strong>Step 3 — Interactive Elements:</strong> We incorporated interactive components to apply the dual channel theory from the course: pairing visual and textual information simultaneously. The waste contrast slider shows versus tells the problem. The fabric decrypter tabs let users engage with material data rather than read a list. The market ledger sliders make financial projections tangible. Each interaction was designed to reinforce the brand message, not demonstrate technical capability.
                       </div>
                       <div className="slide-bullet">
-                        <strong>Step 4 — Feedback Iterations:</strong> Early feedback requested printable waitlist tickets. We integrated a dynamic pass generation template which outputs print stylesheet media directives.
+                        <strong>Step 4 — Feedback and Iteration:</strong> Early versions of the site used a dark background which was more conventional for streetwear but reduced the archival document feel we were building toward. We shifted to the tan base after feedback that the brand should feel like a declassified document, not a dark fashion editorial. The product section originally displayed all three garments simultaneously, but we moved to a selection-based card system after testing showed that one focused view per product created more perceived scarcity, consistent with the brand's limited-drop positioning.
+                      </div>
+                      <div className="slide-bullet">
+                        <strong>Step 5 — Consistency Audit:</strong> Before finalizing, we audited every section for brand token consistency: font usage, color application, spacing, and tone of copy. Every orange element is interactive. Every mono font element is data or coordinates. Every section header follows the same PROTOCOL: LABEL format. This conscious audit reflects the brand fidelity principle from the course.
                       </div>
                     </div>
                   </div>
                 )}
               </main>
             </div>
-            
-            <footer style={{ padding: '15px 25px', background: 'var(--color-light-gray)', borderTop: 'var(--border-tactical)', display: 'flex', justifyContent: 'flex-end' }}>
-              <button 
-                className="btn-tactical btn-orange"
-                onClick={() => window.print()}
-              >
-                <Download size={14} /> Export Dossier to PDF
-              </button>
-            </footer>
           </div>
         </div>
       )}
+
+      {/* Print-Only Dossier Container (hidden on screen, displayed only during browser print) */}
+      <div className="print-dossier-container">
+        {/* Section 1: Group Metadata */}
+        <div className="print-section">
+          <div className="print-dossier-stamp">SUBMISSION DOSSIER // PROJECT GROUP MANIFEST</div>
+          <h2 className="print-heading">Project Group Manifest</h2>
+          <p className="print-sub">Developed under classroom guidelines for course evaluation.</p>
+          <table className="print-team-table">
+            <thead>
+              <tr>
+                <th>OPERATIVE NAME</th>
+                <th>ROLL NUMBER</th>
+                <th>INSTITUTION EMAIL ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              {teamMembers.map((member, idx) => (
+                <tr key={idx}>
+                  <td>{member.name}</td>
+                  <td>{member.roll}</td>
+                  <td>{member.email}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Section 2: Slide 1 */}
+        <div className="print-section print-page-break">
+          <div className="print-dossier-stamp">SLIDE 1 // PROCESS NOTE</div>
+          <h2 className="print-heading">Design System and Brand Logic</h2>
+          
+          <div className="print-bullet">
+            <h3>Brief and Audience Definition</h3>
+            <p>We defined our brief as a pitch website for REMNANT, a hypothetical sustainable Indian streetwear brand built from military deadstock. The audience is urban Indian youth aged 18 to 28 in metro cities, deliberately anti-fast-fashion, who value authenticity over trend cycles. Every design decision was made with this audience in mind: they are visually literate, skeptical of greenwashing, and respond to attitude over aspiration.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Color and Visual Language</h3>
+            <p>We chose Coyote Desert Tan as the base background to evoke military utility and aged document aesthetics, avoiding the typical dark portfolio or clean white startup look. Hazard Orange was selected as the single accent color for all interactive and action elements. This creates an immediate visual hierarchy: the eye reads the cream first, then snaps to orange for every CTA, interactive widget, and alert. This is a direct application of the contrast and hierarchy principles from the course. One accent color used consistently across all eight sections ensures brand token consistency throughout the entire artifact.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Typography</h3>
+            <p>Space Grotesk handles all structural headings and section titles, chosen for its geometric military-industrial character. Share Tech Mono handles all data registers, coordinates, and HUD status panels, creating a declassified tech-pack aesthetic that reinforces the brand narrative. This dual-font system was applied consistently across every section, which directly reflects the brand consistency principle taught in the course. No section deviates from these two fonts.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Accessibility and Layout</h3>
+            <p>We applied a high contrast ratio between dark charcoal stencil text and the sandy background throughout. Large click target regions and tooltip states ensure the interactive elements are accessible. The single-scroll structure follows an F-pattern reading flow: the hero establishes the brand, the problem section grounds it in reality, the concept and product sections deepen engagement, and the CTA closes the loop. This mirrors the narrative arc principle of moving from awareness to action.</p>
+          </div>
+        </div>
+
+        {/* Section 3: Slide 2 */}
+        <div className="print-section print-page-break">
+          <div className="print-dossier-stamp">SLIDE 2 // PROCESS NOTE</div>
+          <h2 className="print-heading">Development Process and Iterations</h2>
+          
+          <div className="print-bullet">
+            <h3>Step 1 — Establishing the Brief</h3>
+            <p>We started by defining what kind of product REMNANT was and who it was for. Early ideation explored multiple brand directions before landing on the classified-document military archive aesthetic. The decision to frame every section as a mission protocol with GPS coordinates, progress trackers, and system logs was made to create a consistent brand world, not just a visual style. This reflects the brief alignment principle: every design choice needed to serve the brand story, not exist for its own sake.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Step 2 — Content Architecture</h3>
+            <p>We mapped the eight scroll sections as a deliberate narrative sequence: Hero establishes identity, Waste Problem creates urgency, The Concept resolves the tension, Drop 001 makes it real, Target Audience profiles the buyer, Why REMNANT argues the differentiators, Market Ledger grounds it in data, and Waitlist Terminal closes with action. This structure was directly informed by the pitch framework taught in the course: problem, solution, audience, differentiators, evidence, CTA.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Step 3 — Interactive Elements</h3>
+            <p>We incorporated interactive components to apply the dual channel theory from the course: pairing visual and textual information simultaneously. The waste contrast slider shows versus tells the problem. The fabric decrypter tabs let users engage with material data rather than read a list. The market ledger sliders make financial projections tangible. Each interaction was designed to reinforce the brand message, not demonstrate technical capability.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Step 4 — Feedback and Iteration</h3>
+            <p>Early versions of the site used a dark background which was more conventional for streetwear but reduced the archival document feel we were building toward. We shifted to the tan base after feedback that the brand should feel like a declassified document, not a dark fashion editorial. The product section originally displayed all three garments simultaneously, but we moved to a selection-based card system after testing showed that one focused view per product created more perceived scarcity, consistent with the brand's limited-drop positioning.</p>
+          </div>
+          
+          <div className="print-bullet">
+            <h3>Step 5 — Consistency Audit</h3>
+            <p>Before finalizing, we audited every section for brand token consistency: font usage, color application, spacing, and tone of copy. Every orange element is interactive. Every mono font element is data or coordinates. Every section header follows the same PROTOCOL: LABEL format. This conscious audit reflects the brand fidelity principle from the course.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
